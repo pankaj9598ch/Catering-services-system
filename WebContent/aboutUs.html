@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 07px;
+  text-align: center;
+  background-image:url("images/about.jpg");
+  background-size: 1600px 300px;
+  color: white;
+}
+
+.team {
+  background-color: floralwhite;
+  }
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<a class="navbar-brand" href="adminHome.jsp">Catering Services</a>
+
+<div style="font-size:25px" class="about-section">
+  <h1>FoodWiseIndia</h1>
+  <p>Nigdi Pradhikaran, Akurdi, Pune - 411044.</p>
+  <p>FoodWiseIndia@gmail.com</p>
+  <p>+91 7038861963</p>
+  </div>
+<div class="team">
+<div style="font-size:20px;color:green" align="center">
+<h2><b><i>Our Team</i></b></h2>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div align="center" class="card">
+      <img src="images/pankaj.jpeg" alt="pankaj" style="width:50%">
+      <div class="container">
+        <h2>Mr.Pankaj Choudhary</h2>
+        <p class="title">CEO & Founder</p>
+        <p>pankaj95@gmail.com</p>
+        <p>7038861963</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div align="center" class="card">
+      <img src="images/sachin.jpg" alt="sachin" style="width:50%">
+      <div class="container">
+        <h2>Mr.Sachin Baraki</h2>
+        <p class="title">Manager</p>        
+        <p>sachinbaraki01@gmail.com</p>
+        <p>7852145678</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div align="center" class="card">
+      <img src="images/guide.jpg" alt="milind" style="width:50%">
+      <div class="container">
+        <h2>Mr.Milind Arjun Sir</h2>
+        <p class="title">Project Guide</p>       
+        <p>milind.arjun@gmail.com</p>
+        <p>9926461075</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+ <div align="center" class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; FoodWiseIndia@gmail.com 2021</p>
+    </div>
+</body>
+</html>
